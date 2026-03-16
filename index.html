@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-icon">🐍</span>
+                    <span class="logo-text">Python desde Cero</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#que-es">¿Qué es?</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Python desde Cero</h1>
+            <p class="hero-subtitle">Guía completa para aprender Python desde fundamentos hasta conceptos avanzados.</p>
+            <div class="hero-buttons">
+                <a href="#que-es" class="btn btn-primary">Comenzar</a>
+                <a href="#ejemplos" class="btn btn-secondary">Ver ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Qué es Python? -->
+    <section id="que-es" class="section">
+        <div class="container">
+            <h2>¿Qué es Python?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">🐍</div>
+                    <h3>Lenguaje de Programación</h3>
+                    <p>Python es un lenguaje de programación interpretado, de alto nivel, multiparadigma y con una sintaxis clara y legible.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Para Qué Sirve</h3>
+                    <p>Desarrollo web, ciencia de datos, inteligencia artificial, automatización, scripting, análisis de datos y más.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Características Principales</h3>
+                    <p>Sintaxis simple, tipado dinámico, multiplataforma, gran ecosistema de librerías y comunidad activa.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>💡 ¿Sabías qué?</h4>
+                <p>Python fue creado por Guido van Rossum en 1991 y nombrado así por el grupo de comedia británico Monty Python. Es uno de los lenguajes más populares del mundo según el índice TIOBE.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitectura -->
+    <section id="arquitectura" class="section section-alt">
+        <div class="container">
+            <h2>Arquitectura de Python</h2>
+            <p class="section-intro">Python utiliza un modelo de ejecución interpretado con bytecode compilado y una máquina virtual (PVM).</p>
+
+            <div class="architecture-diagram">
+                <div class="arch-layer">
+                    <h4>Código Python (.py)</h4>
+                    <p>Tu script fuente</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Compilador Python</h4>
+                    <p>Genera bytecode (.pyc)</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Python Virtual Machine</h4>
+                    <p>Ejecuta el bytecode</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Memoria y Sistema</h4>
+                    <p>Recursos del sistema</p>
+                </div>
+            </div>
+
+            <div class="components-grid">
+                <div class="component-card">
+                    <h4>📊 Características del Lenguaje</h4>
+                    <ul>
+                        <li>Tipado dinámico y fuerte</li>
+                        <li>Recolección de basura automática</li>
+                        <li>Programación orientada a objetos</li>
+                        <li>Funciones de primera clase</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <h4>💾 Ecosistema</h4>
+                    <ul>
+                        <li>pip - Gestor de paquetes</li>
+                        <li>PyPI - Repositorio de paquetes</li>
+                        <li>venv - Entornos virtuales</li>
+                        <li>IDEs: PyCharm, VS Code</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <h4>🔒 Librerías Populares</h4>
+                    <ul>
+                        <li>Django/Flask - Web development</li>
+                        <li>NumPy/Pandas - Data science</li>
+                        <li>TensorFlow/PyTorch - Machine Learning</li>
+                        <li>Requests - HTTP requests</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temas -->
+    <section id="temas" class="section">
+        <div class="container">
+            <h2>Contenido del Curso</h2>
+            <div class="topics-grid">
+                <div class="topic-card" data-topic="1">
+                    <div class="topic-number">01</div>
+                    <h3>Introducción</h3>
+                    <p>Historia de Python, filosofía y configuración del entorno de desarrollo.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="2">
+                    <div class="topic-number">02</div>
+                    <h3>Instalación</h3>
+                    <p>Instalación de Python, pip, entornos virtuales y editores de código.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="3">
+                    <div class="topic-number">03</div>
+                    <h3>Conceptos básicos</h3>
+                    <p>Variables, tipos de datos, operadores, estructuras de control y funciones.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="4">
+                    <div class="topic-number">04</div>
+                    <h3>Ejemplos prácticos</h3>
+                    <p>Manipulación de archivos, APIs, web scraping y automatización.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="5">
+                    <div class="topic-number">05</div>
+                    <h3>Buenas prácticas</h3>
+                    <p>PEP 8, código limpio, testing y documentación en Python.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="6">
+                    <div class="topic-number">06</div>
+                    <h3>Casos reales</h3>
+                    <p>Aplicaciones web, data science, automatización y machine learning.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="7">
+                    <div class="topic-number">07</div>
+                    <h3>Proyecto final</h3>
+                    <p>Desarrollo de una aplicación completa con Python moderno.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos -->
+    <section id="ejemplos" class="section section-alt">
+        <div class="container">
+            <h2>Ejemplos de Código</h2>
+            <div class="examples-container">
+                <div class="example-card">
+                    <h4>Variables y Tipos</h4>
+                    <pre><code class="language-python">nombre = "Juan"
+edad = 30
+altura = 1.75
+es_estudiante = True
+hobbies = ["leer", "codificar"]
+persona = {"nombre": nombre, "edad": edad}</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>Funciones</h4>
+                    <pre><code class="language-python">def saludar(nombre):
+    return f"Hola {nombre}"
+
+def sumar(a, b=0):
+    return a + b
+
+# Lambda
+cuadrado = lambda x: x ** 2</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>Clases</h4>
+                    <pre><code class="language-python">class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def saludar(self):
+        return f"Hola, soy {self.nombre}"</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>Manejo de Archivos</h4>
+                    <pre><code class="language-python">with open('archivo.txt', 'r') as f:
+    contenido = f.read()
+
+with open('salida.txt', 'w') as f:
+    f.write('Hola Mundo')</code></pre>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver más ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Python desde Cero</h4>
+                    <p>Guía educativa completa para aprender Python desde los fundamentos hasta conceptos avanzados.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#que-es">¿Qué es?</a></li>
+                        <li><a href="#temas">Temas</a></li>
+                        <li><a href="#ejemplos">Ejemplos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://docs.python.org/es/" target="_blank">Docs Oficiales</a></li>
+                        <li><a href="https://www.python.org/" target="_blank">Sitio Oficial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>👨‍💻 Desarrollado por <strong>Isaac Esteban Haro Torres</strong></p>
+                <p class="developer-info">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="developer-contact">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                </div>
+                <p class="copyright">© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

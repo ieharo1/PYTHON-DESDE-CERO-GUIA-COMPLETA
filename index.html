@@ -138,47 +138,199 @@
         <div class="container">
             <h2>Contenido del Curso</h2>
             <div class="topics-grid">
-                <div class="topic-card" data-topic="1">
+                <div class="topic-card">
                     <div class="topic-number">01</div>
                     <h3>Introducción</h3>
                     <p>Historia de Python, filosofía y configuración del entorno de desarrollo.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema1-1" class="topic-link">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="2">
+                <div class="topic-card">
                     <div class="topic-number">02</div>
                     <h3>Instalación</h3>
                     <p>Instalación de Python, pip, entornos virtuales y editores de código.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema1-2" class="topic-link">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="3">
+                <div class="topic-card">
                     <div class="topic-number">03</div>
                     <h3>Conceptos básicos</h3>
                     <p>Variables, tipos de datos, operadores, estructuras de control y funciones.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema1-3" class="topic-link">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="4">
+                <div class="topic-card">
                     <div class="topic-number">04</div>
                     <h3>Ejemplos prácticos</h3>
                     <p>Manipulación de archivos, APIs, web scraping y automatización.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema2-1" class="topic-link">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="5">
+                <div class="topic-card">
                     <div class="topic-number">05</div>
                     <h3>Buenas prácticas</h3>
                     <p>PEP 8, código limpio, testing y documentación en Python.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema2-2" class="topic-link">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="6">
+                <div class="topic-card">
                     <div class="topic-number">06</div>
                     <h3>Casos reales</h3>
                     <p>Aplicaciones web, data science, automatización y machine learning.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema3-1" class="topic-link">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="7">
+                <div class="topic-card">
                     <div class="topic-number">07</div>
                     <h3>Proyecto final</h3>
                     <p>Desarrollo de una aplicación completa con Python moderno.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema3-2" class="topic-link">Ver tema →</a>
+                </div>
+            </div>
+            
+            <!-- Contenido Detallado de Temas -->
+            <div class="topic-content-container">
+                <div class="content-detail" id="tema1-1">
+                    <h3>📌 Introducción a Python</h3>
+                    <div class="content-body">
+                        <p><strong>Python</strong> es un lenguaje de programación interpretado, de alto nivel, multiparadigma y con una sintaxis clara y legible.</p>
+                        <h4>Historia:</h4>
+                        <p>Python fue creado por Guido van Rossum en 1991 y nombrado así por el grupo de comedia británico Monty Python.</p>
+                        <h4>Filosofía:</h4>
+                        <ul>
+                            <li>"Hermoso es mejor que feo"</li>
+                            <li>"Explícito es mejor que implícito"</li>
+                            <li>"Simple es mejor que complejo"</li>
+                            <li>"La legibilidad cuenta"</li>
+                        </ul>
+                        <div class="info-box">
+                            <strong>💡 ¿Sabías qué?</strong>
+                            <p>Python es uno de los lenguajes más populares del mundo según el índice TIOBE y GitHub.</p>
+                        </div>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+                
+                <div class="content-detail" id="tema1-2">
+                    <h3>🔧 Instalación de Python</h3>
+                    <div class="content-body">
+                        <h4>En Windows:</h4>
+                        <ol>
+                            <li>Descarga Python desde python.org</li>
+                            <li>Ejecuta el instalador</li>
+                            <li>MARCA "Add Python to PATH"</li>
+                            <li>Click en Install Now</li>
+                        </ol>
+                        <h4>En macOS:</h4>
+                        <pre><code>brew install python3</code></pre>
+                        <h4>En Linux:</h4>
+                        <pre><code>sudo apt-get install python3 python3-pip</code></pre>
+                        <h4>Entorno virtual:</h4>
+                        <pre><code>python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+                
+                <div class="content-detail" id="tema1-3">
+                    <h3>📦 Conceptos Básicos</h3>
+                    <div class="content-body">
+                        <h4>Variables y Tipos:</h4>
+                        <pre><code>nombre = "Juan"           # str
+edad = 30               # int
+altura = 1.75           # float
+es_estudiante = True    # bool
+hobbies = ["leer"]      # list
+persona = {"nombre": "Juan"}  # dict</code></pre>
+                        <h4>Estructuras de Control:</h4>
+                        <pre><code>if edad >= 18:
+    print("Mayor de edad")
+else:
+    print("Menor de edad")
+
+for i in range(5):
+    print(i)
+
+while contador < 10:
+    contador += 1</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+                
+                <div class="content-detail" id="tema2-1">
+                    <h3>💻 Ejemplos Prácticos</h3>
+                    <div class="content-body">
+                        <h4>Manipulación de Archivos:</h4>
+                        <pre><code># Leer archivo
+with open('archivo.txt', 'r') as f:
+    contenido = f.read()
+
+# Escribir archivo
+with open('salida.txt', 'w') as f:
+    f.write('Hola Mundo')</code></pre>
+                        <h4>APIs con Requests:</h4>
+                        <pre><code>import requests
+
+response = requests.get('https://api.example.com/data')
+data = response.json()</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+                
+                <div class="content-detail" id="tema2-2">
+                    <h3>✅ Buenas Prácticas</h3>
+                    <div class="content-body">
+                        <h4>PEP 8 - Style Guide:</h4>
+                        <ul>
+                            <li>Usa 4 espacios para indentación</li>
+                            <li>Nombres de variables en minúsculas</li>
+                            <li>Clases en CamelCase</li>
+                            <li>Máximo 79 caracteres por línea</li>
+                        </ul>
+                        <h4>Testing con pytest:</h4>
+                        <pre><code>def test_suma():
+    assert suma(2, 3) == 5</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+                
+                <div class="content-detail" id="tema3-1">
+                    <h3>🚀 Casos Reales</h3>
+                    <div class="content-body">
+                        <h4>Desarrollo Web:</h4>
+                        <ul>
+                            <li>Django - Framework full-stack</li>
+                            <li>Flask - Microframework</li>
+                            <li>FastAPI - APIs modernas</li>
+                        </ul>
+                        <h4>Data Science:</h4>
+                        <ul>
+                            <li>Pandas - Análisis de datos</li>
+                            <li>NumPy - Cálculo numérico</li>
+                            <li>Matplotlib - Visualización</li>
+                        </ul>
+                        <h4>Machine Learning:</h4>
+                        <ul>
+                            <li>scikit-learn - ML clásico</li>
+                            <li>TensorFlow - Deep Learning</li>
+                            <li>PyTorch - Deep Learning</li>
+                        </ul>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+                
+                <div class="content-detail" id="tema3-2">
+                    <h3>📋 Proyecto Final</h3>
+                    <div class="content-body">
+                        <p>Desarrolla una aplicación completa integrando todos los conceptos aprendidos:</p>
+                        <ol>
+                            <li>Configuración del proyecto</li>
+                            <li>Estructura de carpetas</li>
+                            <li>Implementación de funcionalidades</li>
+                            <li>Testing y documentación</li>
+                            <li>Deploy a producción</li>
+                        </ol>
+                        <div class="info-box">
+                            <strong>💡 Proyecto sugerido:</strong>
+                            <p>Crea una API REST con FastAPI que incluya autenticación, base de datos y documentación automática.</p>
+                        </div>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
             </div>
         </div>
